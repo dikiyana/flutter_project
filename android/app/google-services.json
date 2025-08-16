@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502402706261",
+    "project_id": "bootcampflutter-72a2a",
+    "storage_bucket": "bootcampflutter-72a2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502402706261:android:bb43d7a3bc19e2a2a49ddc",
+        "android_client_info": {
+          "package_name": "com.example.bootcamp_flutter_tm06"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8waUay-aDDRKOb9kZv9vzIH59C5_FIDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
