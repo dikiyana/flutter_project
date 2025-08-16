@@ -1,11 +1,4 @@
-Oke, paham 👍
-Masalahnya di screenshot itu formatting Markdown jadi berantakan (karena ada tanda `bash` yang bikin block code terlalu panjang).
-
-Aku sudah rapikan `README.md` biar lebih clean dan mudah dibaca di GitHub:
-
----
-
-````markdown
+markdown
 # Final Project - Mobile Development
 ## Aplikasi Admin Online Shop
 
