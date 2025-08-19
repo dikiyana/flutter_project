@@ -44,18 +44,6 @@ Dibuat sebagai final project bootcamp Flutter.
 
    flutter run
 
-## 📂 Struktur Project
-lib/
- ├── blocs/                # State management (contoh: Auth BLoC)
- │    └── auth/
- ├── firebase/             # Service Firebase (Auth, Firestore, dsb)
- ├── models/               # Model data (User, Produk)
- ├── pages/                # Halaman UI (Login, Signup, Home, Profile, Form Produk)
- ├── repositories/         # Repository pattern untuk akses data
- ├── app.dart              # Root widget aplikasi
- ├── firebase_options.dart # Konfigurasi Firebase
- └── main.dart             # Entry point aplikasi
-
 👤 Author
 Dikiyana Pratama
 Bootcamp Flutter – Final Project
