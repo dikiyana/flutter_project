@@ -1,9 +1,9 @@
-import 'package:bootcamp_flutter_tm06/blocs/auth/auth_bloc.dart';
-import 'package:bootcamp_flutter_tm06/blocs/auth/auth_event.dart';
-import 'package:bootcamp_flutter_tm06/pages/item_list_page.dart';
-import 'package:bootcamp_flutter_tm06/pages/login_page.dart';
-import 'package:bootcamp_flutter_tm06/pages/signup_page.dart';
-import 'package:bootcamp_flutter_tm06/repositories/auth_repositories.dart';
+import 'package:flutter_project/blocs/auth/auth_bloc.dart';
+import 'package:flutter_project/blocs/auth/auth_event.dart';
+import 'package:flutter_project/pages/home_page.dart';
+import 'package:flutter_project/pages/login_page.dart';
+import 'package:flutter_project/pages/signup_page.dart';
+import 'package:flutter_project/repositories/auth_repositories.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
           initialRoute: '/',
           routes: {
             '/': (context) => LoginPage(),
-            '/home': (context) => ItemListPage(), //ini yg perlu dicek 'HomePage()'
+            '/home': (context) => HomePage(), //ini yg perlu dicek 'HomePage()'
             '/signup': (context) => SignUpPage(),
           },
         ),

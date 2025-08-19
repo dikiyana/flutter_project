@@ -1,6 +1,6 @@
-import 'package:bootcamp_flutter_tm06/blocs/auth/auth_event.dart';
-import 'package:bootcamp_flutter_tm06/blocs/auth/auth_state.dart';
-import 'package:bootcamp_flutter_tm06/repositories/auth_repositories.dart';
+import 'package:flutter_project/blocs/auth/auth_event.dart';
+import 'package:flutter_project/blocs/auth/auth_state.dart';
+import 'package:flutter_project/repositories/auth_repositories.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {

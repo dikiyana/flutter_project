@@ -1,4 +1,4 @@
-package com.example.bootcamp_flutter_tm06
+package com.example.flutter_project
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,5 +1,5 @@
-import 'package:bootcamp_flutter_tm06/firebase/firebase.dart';
-import 'package:bootcamp_flutter_tm06/models/item_models.dart';
+import 'package:flutter_project/firebase/firebase.dart';
+import 'package:flutter_project/models/item_models.dart';
 import 'package:flutter/material.dart';
 
 class FormPage extends StatefulWidget {

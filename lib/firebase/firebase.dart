@@ -1,4 +1,4 @@
-import 'package:bootcamp_flutter_tm06/models/item_models.dart';
+import 'package:flutter_project/models/item_models.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 
