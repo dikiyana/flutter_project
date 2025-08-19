@@ -54,20 +54,39 @@ class _SignUpPageState extends State<SignUpPage> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
+                    // Nama Lengkap
                     TextFormField(
                       controller: namaController,
                       decoration: const InputDecoration(labelText: 'Nama Lengkap'),
-                      validator: (value) =>
-                          value == null || value.isEmpty ? 'Nama tidak boleh kosong' : null,
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return 'Nama tidak boleh kosong';
+                        }
+                        if (value.length < 3) {
+                          return 'Nama minimal 3 karakter';
+                        }
+                        return null;
+                      },
                     ),
                     const SizedBox(height: 12),
+
+                    // Username
                     TextFormField(
                       controller: usernameController,
                       decoration: const InputDecoration(labelText: 'Username'),
-                      validator: (value) =>
-                          value == null || value.isEmpty ? 'Username tidak boleh kosong' : null,
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return 'Username tidak boleh kosong';
+                        }
+                        if (value.length < 5) {
+                          return 'Username minimal 5 karakter';
+                        }
+                        return null;
+                      },
                     ),
                     const SizedBox(height: 12),
+
+                    // Email
                     TextFormField(
                       controller: emailController,
                       decoration: const InputDecoration(labelText: 'Email'),
@@ -75,13 +94,15 @@ class _SignUpPageState extends State<SignUpPage> {
                         if (value == null || value.isEmpty) {
                           return 'Email tidak boleh kosong';
                         }
-                        if (!RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(value)) {
-                          return 'Format email tidak valid';
+                        if (!RegExp(r'^[^@]+@[^@]+\.com$').hasMatch(value)) {
+                          return 'Email harus valid dan diakhiri .com';
                         }
                         return null;
                       },
                     ),
                     const SizedBox(height: 12),
+
+                    // Password
                     TextFormField(
                       controller: passwordController,
                       obscureText: true,
@@ -97,6 +118,8 @@ class _SignUpPageState extends State<SignUpPage> {
                       },
                     ),
                     const SizedBox(height: 12),
+
+                    // Konfirmasi Password
                     TextFormField(
                       controller: confirmPasswordController,
                       obscureText: true,
@@ -112,6 +135,8 @@ class _SignUpPageState extends State<SignUpPage> {
                       },
                     ),
                     const SizedBox(height: 20),
+
+                    // Tombol Daftar
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(

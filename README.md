@@ -22,37 +22,29 @@ Dibuat sebagai final project bootcamp Flutter.
 
 ## 🚀 Cara Menjalankan
 1. Clone repository
-   ```bash
+
    git clone https://github.com/dikiyana/flutter_project.git
-````
 
 2. Masuk ke folder project
-   ```bash
+
    cd flutter_project
-   ```
 
 3. Install dependencies
-   ```bash
+
    flutter pub get
-   ```
 
 4. Konfigurasi Firebase
    * Aktifkan **Authentication (Email/Password)** di Firebase Console
    * Aktifkan **Cloud Firestore**
    * Jalankan konfigurasi Firebase:
-     ```bash
+
      flutterfire configure
-     ```
 
 5. Jalankan aplikasi
-   ```bash
+
    flutter run
-   ```
 
-
-
-📂 Struktur Project
-```
+## 📂 Struktur Project
 lib/
  ├── blocs/                # State management (contoh: Auth BLoC)
  │    └── auth/
@@ -63,20 +55,8 @@ lib/
  ├── app.dart              # Root widget aplikasi
  ├── firebase_options.dart # Konfigurasi Firebase
  └── main.dart             # Entry point aplikasi
-```
-
-
-
-🛠 Teknologi
-[Flutter](https://flutter.dev)
-[Firebase Authentication](https://firebase.google.com/products/auth)
-[Cloud Firestore](https://firebase.google.com/products/firestore)
-[BLoC State Management](https://bloclibrary.dev)
-
-
 
 👤 Author
-
 Dikiyana Pratama
 Bootcamp Flutter – Final Project
 
